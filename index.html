@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grounded Goodness Café</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Marcellus&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+<!-- BACKGROUND ATMOSPHERE -->
+<div class="bg-layer bg1"></div>
+<div class="bg-layer bg2"></div>
+<div class="bg-layer bg3"></div>
+<div class="grain"></div>
+<div class="vignette"></div>
+
+
+
+<!-- FLOATING CART -->
+<div id="cartIcon">
+🛒
+<span id="cartCount">0</span>
+</div>
+
+
+
+<!-- HERO -->
+<header class="hero">
+
+<div class="logoWrap">
+
+<div class="logoGlow"></div>
+
+<img src="logo.png" class="logo">
+
+<div class="steam">
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+</div>
+
+<h1 class="heroTitle">Grounded Goodness Café</h1>
+<p class="heroSub">Served Daily • 10AM — 6PM</p>
+
+</header>
+
+
+
+<!-- MENU -->
+<main id="menuWrapper">
+
+
+
+<!-- COFFEE -->
+<section class="menuSection">
+
+<div class="sectionHead">
+<h2>☕ Coffees</h2>
+<button class="seeAllBtn">See All</button>
+</div>
+
+<div class="cardRow">
+
+<div class="card">
+<img src="a1.png">
+<div class="cardBody">
+<h3>Vanilla Honey Coffee</h3>
+<span class="price">160</span>
+<button class="orderBtn">Add</button>
+</div>
+</div>
+
+<div class="card">
+<img src="a2.png">
+<div class="cardBody">
+<h3>Affogato</h3>
+<span class="price">145</span>
+<button class="orderBtn">Add</button>
+</div>
+</div>
+
+<div class="card">
+<img src="a3.png">
+<div class="cardBody">
+<h3>Mocha Macchiato</h3>
+<span class="price">190</span>
+<button class="orderBtn">Add</button>
+</div>
+</div>
+
+<div class="card">
+<img src="a4.png">
+<div class="cardBody">
+<h3>Caramel Cappuccino</h3>
+<span class="price">170</span>
+<button class="orderBtn">Add</button>
+</div>
+</div>
+
+</div>
+</section>
+
+
+
+<!-- PASTRIES -->
+<section class="menuSection">
+
+<div class="sectionHead">
+<h2>🍰 Pastries</h2>
+<button class="seeAllBtn">See All</button>
+</div>
+
+<div class="cardRow">
+
+<div class="card">
+<img src="b1.png">
+<div class="cardBody">
+<h3>Pecan Pie</h3>
+<span class="price">160</span>
+<button class="orderBtn">Add</button>
+</div>
+</div>
+
+<div class="card">
+<img src="b2.png">
+<div class="cardBody">
+<h3>Vegan Cake</h3>
+<span class="price">145</span>
+<button class="orderBtn">Add</button>
+</div>
+</div>
+
+<div class="card">
+<img src="b3.png">
+<div class="cardBody">
+<h3>Choc Chip Muffin</h3>
+<span class="price">190</span>
+<button class="orderBtn">Add</button>
+</div>
+</div>
+
+<div class="card">
+<img src="b4.png">
+<div class="cardBody">
+<h3>Lemon Tart</h3>
+<span class="price">170</span>
+<button class="orderBtn">Add</button>
+</div>
+</div>
+
+</div>
+</section>
+
+
+
+<!-- SANDWICHES -->
+<section class="menuSection">
+
+<div class="sectionHead">
+<h2>🥪 Sandwiches</h2>
+<button class="seeAllBtn">See All</button>
+</div>
+
+<div class="cardRow">
+
+<div class="card">
+<img src="c1.png">
+<div class="cardBody">
+<h3>Roast Beef Sandwich</h3>
+<span class="price">250</span>
+<button class="orderBtn">Add</button>
+</div>
+</div>
+
+<div class="card">
+<img src="c2.png">
+<div class="cardBody">
+<h3>Vegan Hummus</h3>
+<span class="price">225</span>
+<button class="orderBtn">Add</button>
+</div>
+</div>
+
+<div class="card">
+<img src="c3.png">
+<div class="cardBody">
+<h3>Chicken Wrap</h3>
+<span class="price">290</span>
+<button class="orderBtn">Add</button>
+</div>
+</div>
+
+<div class="card">
+<img src="c4.png">
+<div class="cardBody">
+<h3>Tuna Salad</h3>
+<span class="price">220</span>
+<button class="orderBtn">Add</button>
+</div>
+</div>
+
+</div>
+</section>
+
+
+
+</main>
+
+
+
+
+<!-- CART PANEL -->
+<section id="cartPanel">
+
+<div class="cartHeader">
+<h2>Your Order</h2>
+<button id="closeCart">×</button>
+</div>
+
+<div id="cartItems"></div>
+
+<div class="cartFooter">
+
+<div class="totalRow">
+<span>Total</span>
+<span id="totalPrice">₹0</span>
+</div>
+
+<button id="whatsappOrder">Place Order via WhatsApp</button>
+
+</div>
+
+</section>
+
+
+
+
+<!-- LOADER -->
+<div id="loaderScreen">
+<div class="loaderLogoWrap">
+
+<div class="loaderRing"></div>
+<div class="loaderRing inner"></div>
+
+<img src="logo.png" class="loaderLogo">
+
+</div>
+</div>
+
+
+
+
+<!-- RIPPLE -->
+<div id="rippleContainer"></div>
+
+
+
+<canvas id="particles"></canvas>
+<div id="spotlight"></div>
+<div id="magnetic-layer"></div>
+<script src="script.js"></script>
+
+</body>
+</html>
